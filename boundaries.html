@@ -18,9 +18,9 @@
   <link rel="stylesheet" href="https://use.typekit.net/vbj4klh.css">
 <!-- Custom styles for this template -->
   <link href="css/custom.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- JavaScript	-->
-	<link rel="stylsheet" href="css/custom.js">
+<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+
 <!--	sidebar -->
 	
 </head>
@@ -140,17 +140,20 @@
 
 	<div class="container-fluid">
 		<h1>Ophir Fire Boundaries</h1>
-		<div class="row justify-content-center align-items-center">
-			<div class="col-lg-10">
+		<div class="row background justify-content-center align-items-center text-center">
+			<div class="col-lg-12">
 				<div class="boundary-map-lg">
-					<img src="images/ophir-map@2x.png" alt="Boundary Map" height="800px" class="ophir-map">	
+					<img src="images/ophir-map@2x.png" alt="Boundary Map" class="ophir-map img-responsive">	
 				</div>
 			</div>
-			<div class="col-lg-2">
-				<button class="button download">Download</button>
-			</div>
 		</div>
-		<div class="row">
+		<div class="row justify-content-center align-items-center text-center">
+			<div class="col-lg-12">
+				<button type="sumbit" class="button btn-dwnld" id="download-boundaries">Download Map</button>
+				<div class="preload spin" id="spin" style="display: none"> <img id="circle" class="spinMe" src="images/preloader.png" alt="spinning circle"></div>
+			</div>
+		</div> 
+		<div class="row"> 
 			<div class="col-lg-12">
 			<div id="boundaries-column">
 			<div class="boundary-coordinates text-center">
@@ -314,7 +317,7 @@
 <hr>
 	
 <div class="container-fluid">
-	<h1>Resident Responsibilities</h1>
+	<h1 id="res-responibilities">Resident Responsibilities</h1>
 <div class="row">
 	<div class="col-lg-12">
 	<p>There are several items residents can do that will help volunteer fire fighters protect your home and property in the event of a fire.</p>
@@ -325,9 +328,7 @@
 	</div>
 </div>
 </div>
-
-
-				
+			
 <!-- center content column-lg-7 & main content end divs -->
 </div>
 </div>
@@ -373,7 +374,7 @@
  <!-- Footer -->
 
 <div class="container-fluid">
-	<div class="row justify-content-between align-items-center"  id="footer">
+	<div class="row background justify-content-between align-items-center"  id="footer">
 		 <div class="footer-text"> <b>Ophir Rural Fire Department</b> <br> 32888 Nesika Road <br> Gold Beach, Oregon, 97444  </div>
 		 <div class="footer-text"> <b>Phone:</b> 541-247-2452  <br> <b>E-mail:</b>  <a class="flame" href="mailto:BOD.ORFPD@orfpd.com">BOD.ORFPD@orfpd.com </a> </div> 
 		 <div class="footer-text"> <b>Total Members:</b> 8 <br> <b>Fire Stations:</b> 2 <br> <b>Member Type:</b> Volunteer</div>
@@ -384,11 +385,19 @@
 </div>
 
 
-  <!-- Bootstrap core JavaScript -->
+
+
+
+
+	<!--	my javascript -->
+	<script src="index.js"></script>
+		  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
 
 
 </body>
+
 
 </html>
